@@ -1,18 +1,44 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
+import PostItem from "./PostItem"
 
 import "./posts.scss"
 
 const Posts = () => {
   return (
     <div className="posts">
-      <div className="posts-item">
-        <Link to={"/post"}>JS в деталях [Part 1]</Link>
-        <span>20 June 2021</span>
-        <p>Рассмотрим типы переменных в JS</p>
-      </div>
+      <StaticQuery
+        query={postsQuery}
+        render={data => {
+          return (
+            <>
+              {data.allMarkdownRemark.edges.map(({ node }) => (
+                <PostItem key={node.id} {...node.frontmatter} />
+              ))}
+            </>
+          )
+        }}
+      />
     </div>
   )
 }
+
+const postsQuery = graphql`
+  query {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date
+            descr
+            url
+          }
+        }
+      }
+    }
+  }
+`
 
 export default Posts
