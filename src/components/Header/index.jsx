@@ -34,7 +34,9 @@ const Header = () => {
 
   return (
     <header className="header">
-      <h1 className="title">Ruslan.js</h1>
+      <h1 className="title">
+        <Link to="/">Ruslan.js</Link>
+      </h1>
       <div className="toggle-mode">
         {!activeMode ? (
           <button onClick={() => toggleMode(true)}>
