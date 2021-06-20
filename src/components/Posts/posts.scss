@@ -1,0 +1,22 @@
+.posts {
+  margin-bottom: 70px;
+  &-item {
+    a {
+      display: inline-block;
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 13px;
+      &:after {
+        display: none;
+      }
+    }
+    span {
+      display: block;
+      font-size: 14px;
+    }
+    p {
+      margin-top: 5px;
+      font-size: 19px;
+    }
+  }
+}
