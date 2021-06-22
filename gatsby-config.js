@@ -10,6 +10,18 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
     {
+      resolve: `gatsby-plugin-gitalk`,
+      options: {
+        config: {
+          clientID: "b06b4203d9267da6f247",
+          clientSecret: "abe8a1003c34796ced2c3e51b1d7c89369f5fc5d",
+          repo: "kriklivyy-blog",
+          owner: "ruslankriklivyy",
+          admin: ["ruslankriklivyy"],
+        },
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
