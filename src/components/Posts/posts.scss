@@ -8,13 +8,11 @@
       border-radius: 5px;
     }
     a {
+      position: relative;
       display: inline-block;
       font-size: 26px;
       font-weight: 700;
       margin-bottom: 13px;
-      &:after {
-        display: none;
-      }
     }
     span {
       display: block;
