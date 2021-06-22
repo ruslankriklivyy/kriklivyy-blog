@@ -1,6 +1,8 @@
 .posts {
   margin-bottom: 70px;
+  min-height: 50vh;
   &-item {
+    
     a {
       display: inline-block;
       font-size: 26px;
