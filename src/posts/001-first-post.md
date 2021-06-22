@@ -5,6 +5,8 @@ descr: Рассмотрим типы переменных в JS
 url: /variables-in-js
 ---
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="js img" />
+
 JavaScript-приложению обычно нужно работать с информацией. Например:
 
 Интернет-магазин – информация может включать продаваемые товары и корзину покупок.
@@ -83,3 +85,5 @@ let user = 'John'
 ```
 
 В принципе, все эти варианты работают одинаково. Так что это вопрос личного вкуса и эстетики.
+
+<img src="https://media4.giphy.com/media/229ORmLCNmURn1tqnJ/200.gif" alt="post gif" />

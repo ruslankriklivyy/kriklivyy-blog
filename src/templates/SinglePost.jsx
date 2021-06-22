@@ -19,10 +19,12 @@ const SinglePost = ({ data }) => {
 
   return (
     <Layout>
-      <Seo title={`${title} | Kriklivyy.js`} />
-      <h1>{title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-      <Gitalk options={gitalkConfig} />
+      <div className="single-post">
+        <Seo title={`${title} | Kriklivyy.js`} />
+        <h1>{title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <Gitalk options={gitalkConfig} />
+      </div>
     </Layout>
   )
 }

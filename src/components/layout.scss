@@ -7,10 +7,30 @@ html {
 }
 body {
   margin: 0;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Open Sans', sans-serif;
   &.dark {
     background-color: #000;
     color: #a6a6a6;
+    .gt-btn .gt-btn-preview, .gt-container .gt-btn-preview {
+      background: #282A36;
+      color: #a6a6a6;
+    }
+    .gt-comment-content, .gt-container .gt-comment-admin .gt-comment-content {
+      background-color: #282A36;
+    }
+    .gt-comment-body .markdown-body, .gt-container .gt-comment-body {
+      color: #a6a6a6 !important;
+    }
+    .gt-container .gt-comment-content:hover {
+      box-shadow: none;
+    }
+    .gt-header-textarea {
+      background: #282A36;
+      color: #a6a6a6;
+      &:hover {
+        background: #282A36;
+      }
+    }
     &::-webkit-scrollbar-track-piece {
       background-color: #000;
     }
@@ -24,6 +44,10 @@ body {
 }
 
 html, body {
+  ::selection{
+    background: #282A36;
+    color: #fff;
+  }
   ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -84,6 +108,14 @@ ul {
   }
 }
 
+footer {
+  padding: 20px 0;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 
 .container {
   max-width: 670px;
@@ -97,26 +129,16 @@ p {
 
 a {
   text-decoration: none;
-  transition: all 0.2s ease;
-  position: relative;
-  padding-bottom: 4px;
   color: #135de7;
-  &::after {
-    content: "";
+}
+
+.single-post {
+  img {
     display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: #135de7;
-    transition: all 0.4s ease;
-    opacity: 0;
-  }
-  &:hover::after {
-    left: 0;
-    width: 100%;
-    opacity: 1;
+    height: 300px;
+    width: 400px;
+    border-radius: 5px;
+    margin: 10px 0;
   }
 }
 
