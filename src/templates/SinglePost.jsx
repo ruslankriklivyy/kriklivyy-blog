@@ -25,6 +25,7 @@ const SinglePost = ({ data, pageContext }) => {
       <div className="single-post">
         <Seo title={`${title} | Kriklivyy Blog`} />
         <h1>{title}</h1>
+        <span className="single-post__date">{date}</span>
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <BackBtn next={next} prev={prev} />
         <Gitalk options={gitalkConfig} />
