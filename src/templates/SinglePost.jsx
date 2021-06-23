@@ -8,7 +8,9 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import BackBtn from "../components/BackBtn"
 
-const SinglePost = ({ data }) => {
+const SinglePost = ({ data, pageContext }) => {
+  console.log(pageContext)
+  const { next, prev } = pageContext
   const html = data.markdownRemark.html
   const { title, url, date } = data.markdownRemark.frontmatter
   let gitalkConfig = {
@@ -24,7 +26,7 @@ const SinglePost = ({ data }) => {
         <Seo title={`${title} | Kriklivyy Blog`} />
         <h1>{title}</h1>
         <div dangerouslySetInnerHTML={{ __html: html }} />
-        <BackBtn />
+        <BackBtn next={next} prev={prev} />
         <Gitalk options={gitalkConfig} />
       </div>
     </Layout>

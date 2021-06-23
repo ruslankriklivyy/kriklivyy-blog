@@ -18,6 +18,19 @@
       fill: #fff;
     }
   }
+  &--next {
+    margin-left: auto;
+    svg {
+      transform: rotate(-180deg);
+      margin-right: 0;
+      margin-left: 12px !important;
+    }
+  }
+  &-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   svg {
     display: block;
     width: 25px;
