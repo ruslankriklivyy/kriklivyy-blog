@@ -6,7 +6,7 @@ import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import BackBtn from "../components/BackBtn"
+import NavigationBtns from "../components/NavigationBtns"
 
 const SinglePost = ({ data, pageContext }) => {
   console.log(pageContext)
@@ -27,7 +27,7 @@ const SinglePost = ({ data, pageContext }) => {
         <h1>{title}</h1>
         <span className="single-post__date">{date}</span>
         <div dangerouslySetInnerHTML={{ __html: html }} />
-        <BackBtn next={next} prev={prev} />
+        <NavigationBtns next={next} prev={prev} />
         <Gitalk options={gitalkConfig} />
       </div>
     </Layout>

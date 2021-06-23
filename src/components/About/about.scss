@@ -14,27 +14,27 @@
       margin-top: 7px;
       a {
         text-decoration: none;
-  transition: all 0.2s ease;
-  position: relative;
-  padding-bottom: 4px;
-  color: #135de7;
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: #135de7;
-    transition: all 0.4s ease;
-    opacity: 0;
-  }
-  &:hover::after {
-    left: 0;
-    width: 100%;
-    opacity: 1;
-  }
+        transition: all 0.2s ease;
+        position: relative;
+        padding-bottom: 4px;
+        color: #135de7;
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0;
+          height: 2px;
+          background: #135de7;
+          transition: all 0.4s ease;
+          opacity: 0;
+        }
+        &:hover::after {
+          left: 0;
+          width: 100%;
+          opacity: 1;
+        }
       }
       a:first-child {
         margin-right: 10px;

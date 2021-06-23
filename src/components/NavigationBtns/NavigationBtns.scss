@@ -1,22 +1,36 @@
 .btn-back {
+  position: relative;
   margin-top: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 5px 10px;
   cursor: pointer;
-  border: 2px solid #135de7;
+  border: none;
   transition: all 0.2s ease;
   background-color: transparent;
   border-radius: 7px;
   font-size: 16px;
-  color: inherit;
-  &:hover {
+  color: #135de7;
+  svg {
+    fill: #135de7;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
     background: #135de7;
-    color: #fff;
-    svg {
-      fill: #fff;
-    }
+    transition: all 0.4s ease;
+    opacity: 0;
+  }
+  &:hover::after {
+    left: 0;
+    width: 100%;
+    opacity: 1;
   }
   &--next {
     margin-left: auto;

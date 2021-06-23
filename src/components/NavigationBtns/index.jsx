@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import { convertUrl } from "../../utils/convertUrl"
 
-import "./backBtn.scss"
+import "./NavigationBtns.scss"
 
-const BackBtn = ({ next, prev }) => {
+const NavigationBtns = ({ next, prev }) => {
   return (
     <div className="btn-back-box">
       {prev && (
@@ -62,4 +62,4 @@ const BackBtn = ({ next, prev }) => {
   )
 }
 
-export default BackBtn
+export default NavigationBtns
