@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <header className="header">
       <h1 className="title">
-        <Link to="/">Kriklivyy.js &#128075;</Link>
+        <Link to="/">Kriklivyy Blog &#128075;</Link>
       </h1>
       <div className="toggle-mode">
         {!activeMode ? (

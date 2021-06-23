@@ -1,6 +1,7 @@
 .posts {
-  height: 70vh;
+  min-height: 70vh;
   &-item {
+    margin-bottom: 30px;
     img {
       display: block;
       width: 170px;

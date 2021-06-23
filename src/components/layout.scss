@@ -7,28 +7,31 @@ html {
 }
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   &.dark {
     background-color: #000;
     color: #a6a6a6;
-    .gt-btn .gt-btn-preview, .gt-container .gt-btn-preview {
-      background: #282A36;
+    .gt-btn .gt-btn-preview,
+    .gt-container .gt-btn-preview {
+      background: #282a36;
       color: #a6a6a6;
     }
-    .gt-comment-content, .gt-container .gt-comment-admin .gt-comment-content {
-      background-color: #282A36;
+    .gt-comment-content,
+    .gt-container .gt-comment-admin .gt-comment-content {
+      background-color: #282a36;
     }
-    .gt-comment-body .markdown-body, .gt-container .gt-comment-body {
+    .gt-comment-body .markdown-body,
+    .gt-container .gt-comment-body {
       color: #a6a6a6 !important;
     }
     .gt-container .gt-comment-content:hover {
       box-shadow: none;
     }
     .gt-header-textarea {
-      background: #282A36;
+      background: #282a36;
       color: #a6a6a6;
       &:hover {
-        background: #282A36;
+        background: #282a36;
       }
     }
     &::-webkit-scrollbar-track-piece {
@@ -43,9 +46,10 @@ body {
   }
 }
 
-html, body {
-  ::selection{
-    background: #282A36;
+html,
+body {
+  ::selection {
+    background: #282a36;
     color: #fff;
   }
   ::-webkit-scrollbar {
@@ -63,7 +67,7 @@ html, body {
   }
   ::-webkit-scrollbar-thumb {
     height: 50px;
-    background-color: #282A36;
+    background-color: #282a36;
     border-radius: 3px;
   }
   ::-webkit-scrollbar-corner {
@@ -137,10 +141,10 @@ a {
   img {
     display: block;
     height: 300px;
-    width: 400px;
+    width: 450px;
     border-radius: 5px;
     margin: 10px 0;
-    @media(max-width: 500px) {
+    @media (max-width: 500px) {
       width: 100%;
     }
   }

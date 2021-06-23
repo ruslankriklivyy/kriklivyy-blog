@@ -9,7 +9,7 @@ import Posts from "../components/Posts"
 const IndexPage = () => {
   return (
     <Layout>
-      <Seo title="All posts | Kriklivyy.js" />
+      <Seo title="All posts | Kriklivyy Blog" />
       <About />
       <Posts />
     </Layout>

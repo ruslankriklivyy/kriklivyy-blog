@@ -34,6 +34,7 @@ const postsQuery = graphql`
             date
             descr
             url
+            poster
           }
         }
       }
