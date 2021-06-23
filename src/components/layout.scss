@@ -143,6 +143,14 @@ a {
 }
 
 .single-post {
+  b {
+    font-weight: 600;
+    background: #fafafa;
+    padding: 3px 6px;
+    border-radius: 4px;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
   h1 {
     margin-bottom: 5px;
   }
