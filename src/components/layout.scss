@@ -8,17 +8,20 @@ html {
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
   &.dark {
     background-color: #000;
     color: #a6a6a6;
+    .btn-top {
+      &:hover {
+        svg {
+          fill: #000000;
+        }
+      }
+    }
     .single-post {
       b {
         background-color: #282a36;
-      }
-    }
-    .btn-back {
-      svg {
-        fill: #fff;
       }
     }
     .gt-btn .gt-btn-preview,
@@ -54,6 +57,19 @@ body {
       }
     }
   }
+}
+
+.gt-btn .gt-btn-login {
+  background-color: #135de7 !important;
+  border-color: #135de7;
+}
+
+.gt-btn .gt-btn-preview {
+  border-color: #135de7;
+}
+
+.gt-ico-text {
+  color: #135de7;
 }
 
 html,

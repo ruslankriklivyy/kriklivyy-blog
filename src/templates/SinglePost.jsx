@@ -7,9 +7,9 @@ import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import NavigationBtns from "../components/NavigationBtns"
+import TopBtn from "../components/TopBtn"
 
 const SinglePost = ({ data, pageContext }) => {
-  console.log(pageContext)
   const { next, prev } = pageContext
   const html = data.markdownRemark.html
   const { title, url, date } = data.markdownRemark.frontmatter
@@ -23,6 +23,7 @@ const SinglePost = ({ data, pageContext }) => {
   return (
     <Layout>
       <div className="single-post">
+        <TopBtn />
         <Seo title={`${title} | Kriklivyy Blog`} />
         <h1>{title}</h1>
         <span className="single-post__date">{date}</span>

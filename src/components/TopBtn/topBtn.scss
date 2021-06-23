@@ -1,0 +1,28 @@
+.btn-top {
+  padding: 5px 8px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 2px solid #135de7;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 500;
+  @media (max-width: 992px) {
+    display: none;
+  }
+  &:hover {
+    background-color: #135de7;
+    svg {
+      fill: #fff;
+    }
+  }
+  svg {
+    transform: rotate(90deg);
+    width: 20px;
+    height: 20px;
+    fill: #135de7;
+    transition: all 0.2s ease;
+  }
+}
