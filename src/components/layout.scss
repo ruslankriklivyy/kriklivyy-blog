@@ -11,6 +11,11 @@ body {
   &.dark {
     background-color: #000;
     color: #a6a6a6;
+    .single-post {
+      b {
+        background-color: #282a36;
+      }
+    }
     .btn-back {
       svg {
         fill: #fff;
