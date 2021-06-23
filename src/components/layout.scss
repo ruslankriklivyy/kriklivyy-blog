@@ -11,6 +11,11 @@ body {
   &.dark {
     background-color: #000;
     color: #a6a6a6;
+    .btn-back {
+      svg {
+        fill: #fff;
+      }
+    }
     .gt-btn .gt-btn-preview,
     .gt-container .gt-btn-preview {
       background: #282a36;

@@ -6,6 +6,7 @@ import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import BackBtn from "../components/BackBtn"
 
 const SinglePost = ({ data }) => {
   const html = data.markdownRemark.html
@@ -23,6 +24,7 @@ const SinglePost = ({ data }) => {
         <Seo title={`${title} | Kriklivyy Blog`} />
         <h1>{title}</h1>
         <div dangerouslySetInnerHTML={{ __html: html }} />
+        <BackBtn />
         <Gitalk options={gitalkConfig} />
       </div>
     </Layout>
