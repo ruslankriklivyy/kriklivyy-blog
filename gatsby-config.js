@@ -10,6 +10,15 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `#41b883`,
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-gitalk`,
       options: {
         config: {
