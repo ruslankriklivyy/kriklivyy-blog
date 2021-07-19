@@ -23,7 +23,7 @@ const SinglePost = ({ data, pageContext }) => {
   return (
     <Layout>
       <div className="single-post">
-        <TopBtn />
+        {/* <TopBtn /> */}
         <Seo title={`${title} | Kriklivyy Blog`} />
         <h1>{title}</h1>
         <span className="single-post__date">{date}</span>

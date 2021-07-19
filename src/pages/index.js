@@ -10,7 +10,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title="All posts | Kriklivyy Blog" />
-      <About />
+      {/* <About /> */}
       <Posts />
     </Layout>
   )

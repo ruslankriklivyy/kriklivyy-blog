@@ -13,11 +13,12 @@
     &__links {
       margin-top: 7px;
       a {
+        font-weight: 500;
         text-decoration: none;
         transition: all 0.2s ease;
         position: relative;
         padding-bottom: 4px;
-        color: #135de7;
+        color: #41b883;
         &::after {
           content: "";
           display: block;
@@ -26,7 +27,7 @@
           left: 50%;
           width: 0;
           height: 2px;
-          background: #135de7;
+          background: #41b883;
           transition: all 0.4s ease;
           opacity: 0;
         }

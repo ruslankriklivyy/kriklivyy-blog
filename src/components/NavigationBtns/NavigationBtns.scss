@@ -11,9 +11,9 @@
   background-color: transparent;
   border-radius: 7px;
   font-size: 16px;
-  color: #135de7;
+  color: #41b883;
   svg {
-    fill: #135de7;
+    fill: #41b883;
   }
   &::after {
     content: "";
@@ -23,7 +23,7 @@
     left: 50%;
     width: 0;
     height: 2px;
-    background: #135de7;
+    background: #41b883;
     transition: all 0.4s ease;
     opacity: 0;
   }

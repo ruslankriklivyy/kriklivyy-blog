@@ -1,7 +1,7 @@
 ---
 title: Переменные в JS 💻
 date: 20 June 2021
-descr: Рассмотрим типы переменных в JS
+descr: Рассмотрим типы переменных в JS, так же немного об переменных в программировании
 url: /variables-in-js
 poster: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
 ---
