@@ -1,10 +1,8 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 import lightSvg from "../../images/light.svg"
 import moonSvg from "../../images/moon.svg"
-import logoPng from "../../images/logo.png"
 import "./header.scss"
 
 const Header = () => {
@@ -37,12 +35,8 @@ const Header = () => {
     <header className="header">
       <div className="header__inner">
         <div className="header__info">
-          <img className="logo" src={logoPng} alt="logo png" />
           <Link to="/">
-            <h2>Kriklivyy</h2>
-            <span>
-              <b>{"<?php echo "}</b>«Блог о веб-разработке»<b>{" ?>"}</b>
-            </span>
+            <h2>Kriklivyy Blog 👋</h2>
           </Link>
         </div>
         <div className="toggle-mode">
